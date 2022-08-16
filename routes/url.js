@@ -1,17 +1,14 @@
 const express = require('express');
 const router = express.Router();
 const validUrl = require('valid-url');
-// const shortid = require('shortid');
-const config = require('config');
-
 const Url = require('../models/Url');
+const baseUrl = "https://wece.info"
 
 // @route  POST api/url/shorten
 // @desc   Create a short url
 
 router.post('/shorten', async (req, res) => {
     const { longUrl } = req.body;
-    const baseUrl = config.get('baseUrl');
 
     if(!validUrl.isUri(baseUrl)) { // Check if baseUrl is invalid
         return res.status(401).json('Invalid base url');

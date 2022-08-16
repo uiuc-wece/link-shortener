@@ -1,6 +1,5 @@
 const mongoose = require('mongoose');
-const config = require('config');
-const db = config.get('mongoURI');
+const db = "mongodb+srv://ellie-wece:popoca55@cluster0.dvsku.gcp.mongodb.net/?retryWrites=true&w=majority"
 
 const connectDB = async () => {
     try {
@@ -14,4 +13,4 @@ const connectDB = async () => {
     }
     }
 
-    module.exports = connectDB;
+module.exports = connectDB;
