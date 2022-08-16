@@ -2,6 +2,6 @@ POST http://localhost:3000/api/url/shorten
 Content-Type: application/json
 
 {
-    "longUrl": "https://www.google.com",
-    "urlCode": "playstation"
+    "longUrl": "https://www.instagram.com/wie_ille/",
+    "urlCode": "notblamk"
 }
