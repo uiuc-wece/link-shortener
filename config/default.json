@@ -1,4 +1,4 @@
 {
     "mongoURI": "mongodb+srv://ellie-wece:popoca55@cluster0.dvsku.gcp.mongodb.net/?retryWrites=true&w=majority",
-    "baseUrl": "https://link-shortener-seven-iota.vercel.app"
+    "baseUrl": "https://wece.info"
 }
